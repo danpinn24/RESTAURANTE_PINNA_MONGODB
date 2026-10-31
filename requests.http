@@ -1,0 +1,87 @@
+### =========================================================
+### Pruebas de los endpoints de la API del restaurante
+### Requiere la extensión "REST Client" de VS Code.
+### Antes: npm run seed  y  npm run dev
+### =========================================================
+
+@base = http://localhost:3000/api/platos
+
+### 1) LISTAR todos los platos
+GET {{base}}
+
+### 2) LISTAR aptos para celíacos y veganos
+GET {{base}}?celiacos=true&veganos=true
+
+### 3) LISTAR aptos para diabéticos
+GET {{base}}?diabeticos=true
+
+### 4) ALTA: crear un plato nuevo
+# @name nuevoPlato
+POST {{base}}
+Content-Type: application/json
+
+{
+  "nombre": "Empanadas de carne (x3)",
+  "descripcion": "Tres empanadas de carne cortada a cuchillo, horneadas.",
+  "ingredientes": ["harina de trigo", "carne vacuna", "cebolla", "huevo", "aceitunas", "comino"],
+  "precio": 7500,
+  "aptoCeliacos": false,
+  "aptoVeganos": false,
+  "aptoDiabeticos": false,
+  "calorias": 690,
+  "imagen": "https://placehold.co/600x400?text=Empanadas"
+}
+
+### Guardamos el _id del plato recién creado
+@id = {{nuevoPlato.response.body._id}}
+
+### 5) TRAER el plato creado por su id
+GET {{base}}/{{id}}
+
+### 6) MODIFICACIÓN: cambiar precio y calorías
+PUT {{base}}/{{id}}
+Content-Type: application/json
+
+{
+  "precio": 8200,
+  "calorias": 710
+}
+
+### 7) MODIFICACIÓN inválida: precio negativo (espera 400)
+PUT {{base}}/{{id}}
+Content-Type: application/json
+
+{
+  "precio": -50
+}
+
+### 8) ALTA inválida: faltan datos y la imagen no es URL (espera 400)
+POST {{base}}
+Content-Type: application/json
+
+{
+  "nombre": "Plato incompleto",
+  "imagen": "no-es-una-url"
+}
+
+### 9) ALTA repetida: mismo nombre que uno existente (espera 409)
+POST {{base}}
+Content-Type: application/json
+
+{
+  "nombre": "Ensalada César",
+  "descripcion": "Duplicada",
+  "ingredientes": ["lechuga"],
+  "precio": 1000,
+  "calorias": 100,
+  "imagen": "https://placehold.co/600x400?text=Duplicada"
+}
+
+### 10) BAJA: eliminar el plato creado
+DELETE {{base}}/{{id}}
+
+### 11) Verificar que ya no existe (espera 404)
+GET {{base}}/{{id}}
+
+### 12) ID con formato inválido (espera 400)
+GET {{base}}/123

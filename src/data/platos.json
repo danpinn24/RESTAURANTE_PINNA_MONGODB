@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "Milanesa napolitana con papas fritas",
+    "descripcion": "Milanesa de nalga con salsa de tomate, jamón y muzzarella gratinada, con papas fritas.",
+    "ingredientes": ["nalga de ternera", "pan rallado", "huevo", "salsa de tomate", "jamón cocido", "muzzarella", "papas"],
+    "precio": 14500,
+    "aptoCeliacos": false,
+    "aptoVeganos": false,
+    "aptoDiabeticos": false,
+    "calorias": 1150,
+    "imagen": "https://placehold.co/600x400?text=Milanesa+napolitana"
+  },
+  {
+    "nombre": "Bife de chorizo con ensalada mixta",
+    "descripcion": "Bife de chorizo a la parrilla de 400 g con ensalada de lechuga, tomate y cebolla.",
+    "ingredientes": ["bife de chorizo", "sal gruesa", "lechuga", "tomate", "cebolla", "aceite de oliva"],
+    "precio": 18900,
+    "aptoCeliacos": true,
+    "aptoVeganos": false,
+    "aptoDiabeticos": true,
+    "calorias": 780,
+    "imagen": "https://placehold.co/600x400?text=Bife+de+chorizo"
+  },
+  {
+    "nombre": "Ensalada César",
+    "descripcion": "Lechuga romana, pollo grillado, croutons, queso parmesano y aderezo César.",
+    "ingredientes": ["lechuga romana", "pechuga de pollo", "croutons", "queso parmesano", "aderezo César"],
+    "precio": 11200,
+    "aptoCeliacos": false,
+    "aptoVeganos": false,
+    "aptoDiabeticos": true,
+    "calorias": 520,
+    "imagen": "https://placehold.co/600x400?text=Ensalada+Cesar"
+  },
+  {
+    "nombre": "Bowl vegano de garbanzos",
+    "descripcion": "Garbanzos especiados, quinoa, palta, zanahoria y hojas verdes con aderezo de tahini.",
+    "ingredientes": ["garbanzos", "quinoa", "palta", "zanahoria", "rúcula", "tahini", "limón"],
+    "precio": 10800,
+    "aptoCeliacos": true,
+    "aptoVeganos": true,
+    "aptoDiabeticos": true,
+    "calorias": 610,
+    "imagen": "https://placehold.co/600x400?text=Bowl+vegano"
+  },
+  {
+    "nombre": "Ravioles de ricota con salsa bolognesa",
+    "descripcion": "Ravioles caseros rellenos de ricota y nuez, con salsa bolognesa de carne.",
+    "ingredientes": ["harina de trigo", "huevo", "ricota", "nuez", "carne picada", "tomate", "cebolla"],
+    "precio": 12600,
+    "aptoCeliacos": false,
+    "aptoVeganos": false,
+    "aptoDiabeticos": false,
+    "calorias": 890,
+    "imagen": "https://placehold.co/600x400?text=Ravioles+bolognesa"
+  },
+  {
+    "nombre": "Salmón grillado con vegetales",
+    "descripcion": "Filet de salmón a la plancha con zucchini, morrón y brócoli salteados.",
+    "ingredientes": ["salmón", "zucchini", "morrón", "brócoli", "aceite de oliva", "limón"],
+    "precio": 21500,
+    "aptoCeliacos": true,
+    "aptoVeganos": false,
+    "aptoDiabeticos": true,
+    "calorias": 540,
+    "imagen": "https://placehold.co/600x400?text=Salmon+grillado"
+  },
+  {
+    "nombre": "Risotto de hongos",
+    "descripcion": "Arroz arbóreo cremoso con hongos de pino y champiñones, sin lácteos.",
+    "ingredientes": ["arroz arbóreo", "hongos de pino", "champiñones", "cebolla", "caldo de verduras", "aceite de oliva"],
+    "precio": 13400,
+    "aptoCeliacos": true,
+    "aptoVeganos": true,
+    "aptoDiabeticos": false,
+    "calorias": 650,
+    "imagen": "https://placehold.co/600x400?text=Risotto+de+hongos"
+  },
+  {
+    "nombre": "Hamburguesa completa",
+    "descripcion": "Medallón de carne de 180 g en pan de papa con lechuga, tomate, cheddar, panceta y huevo.",
+    "ingredientes": ["carne vacuna", "pan de papa", "lechuga", "tomate", "queso cheddar", "panceta", "huevo"],
+    "precio": 13900,
+    "aptoCeliacos": false,
+    "aptoVeganos": false,
+    "aptoDiabeticos": false,
+    "calorias": 1080,
+    "imagen": "https://placehold.co/600x400?text=Hamburguesa+completa"
+  },
+  {
+    "nombre": "Wok de vegetales y tofu",
+    "descripcion": "Tofu salteado al wok con brotes de soja, repollo, zanahoria y salsa de soja sin TACC.",
+    "ingredientes": ["tofu", "brotes de soja", "repollo", "zanahoria", "cebolla de verdeo", "salsa de soja sin TACC"],
+    "precio": 11900,
+    "aptoCeliacos": true,
+    "aptoVeganos": true,
+    "aptoDiabeticos": true,
+    "calorias": 430,
+    "imagen": "https://placehold.co/600x400?text=Wok+de+tofu"
+  },
+  {
+    "nombre": "Flan casero con dulce de leche",
+    "descripcion": "Flan de huevo tradicional con caramelo y una porción de dulce de leche.",
+    "ingredientes": ["leche", "huevo", "azúcar", "esencia de vainilla", "dulce de leche"],
+    "precio": 5800,
+    "aptoCeliacos": true,
+    "aptoVeganos": false,
+    "aptoDiabeticos": false,
+    "calorias": 420,
+    "imagen": "https://placehold.co/600x400?text=Flan+con+dulce+de+leche"
+  }
+]
